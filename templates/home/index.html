@@ -1,0 +1,623 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block contents %}
+<div id="sec1" class="hero-wrap js-fullheight" style="background-image: url({% static 'img/ny2.jpg' %}); height: 738px;">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true" style="height: 738px;">
+    <div class="col-md-7 ftco-animate fadeInUp ftco-animated">
+    <span class="subheading">Welcome to Tanzania</span>
+    <h1 class="mb-4">Discover Your Favorite Place with Us</h1>
+    <!--<p class="caps">Travel to the any corner of the world, without going around in circles</p>-->
+    </div>
+ 
+    </div>
+    </div>
+    </div>
+
+    <section class="ftco-section services-section" id="sec2"  >
+    <div class="container">
+    <div class="row d-flex">
+    <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center fadeInUp ftco-animated">
+    <div class="w-100">
+    <span class="subheading">Welcome to Africa</span>
+    <h2 class="mb-4">It's time to start your adventure</h2>
+    <p>A small river named Duden flows by their place and supplies it with 
+    the necessary regelialia. It is a paradisematic country, in which 
+    roasted parts of sentences fly into your mouth.</p>
+    <p>Far far away, behind the word mountains, far from the countries 
+    Vokalia and Consonantia, there live the blind texts. Separated they live
+     in Bookmarksgrove right at the coast of the Semantics, a large language
+     ocean.
+    A small river named Duden flows by their place and supplies it with the 
+    necessary regelialia.</p>
+    
+    <!--<p><a href="#" class="btn btn-success py-3 px-4">Search Destination</a></p>-->
+    
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="row">
+    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+    <div class="services services-1 color-1 d-block img" style="background-image: url(images/services-1.jpg);">
+    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+    <div class="media-body">
+    <h3 class="heading mb-3">Activities</h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+    <div class="services services-1 color-2 d-block img" style="background-image: url(images/services-2.jpg);">
+    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+    <div class="media-body">
+    <h3 class="heading mb-3">Travel Arrangements</h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+    <div class="services services-1 color-3 d-block img" style="background-image: url(images/services-3.jpg);">
+    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+    <div class="media-body">
+    <h3 class="heading mb-3">Private Guide</h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+    <div class="services services-1 color-4 d-block img" style="background-image: url(images/services-4.jpg);">
+    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+    <div class="media-body">
+    <h3 class="heading mb-3">Location Manager</h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    
+    
+    <!-- <section class="ftco-section testimony-section slim1" style="background-image:url({% static 'img/bg_3.jpg' %});">
+        <div class="container">
+          <div class="row justify-content-center ">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <span class="subheading">Countries to Visit in Africa</span>
+              <h2 class="mb-4">Select Your Country</h2>
+            </div>
+          </div>
+          <div class="row ftco-animate">
+            <div class="col-md-12">
+              <div class="carousel-testimony owl-carousel">
+              
+                <div class="item">
+                  <div class="testimony-wrap p-4 ">
+                    <div class="text text-center">
+                        <div class="project-destination">
+                            <a href="#" class="img" style="background-image: url({% static 'img/1.jpg' %});">
+                            <div class="text">
+                            <h3>Tanzania</h3>
+                            <span>5 Tours</span>
+                            </div>
+                            </a>
+                            </div>
+                      <p class="name">{{item.name}}</p>
+                      <span class="position">{{item.carrier}}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                    <div class="testimony-wrap p-4 ">
+                      
+                      <div class="text text-center">
+                          <div class="project-destination">
+                              <a href="#" class="img" style="background-image: url({% static 'img/2.jpg' %});">
+                              <div class="text">
+                              <h3>Egypt</h3>
+                              <span>5 Tours</span>
+                              </div>
+                              </a>
+                              </div>
+                        <p class="name">{{item.name}}</p>
+                        <span class="position">{{item.carrier}}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="testimony-wrap p-4 ">
+                      <div class="text text-center">
+                          <div class="project-destination">
+                              <a href="#" class="img" style="background-image: url({% static 'img/3.jpg' %});">
+                              <div class="text">
+                              <h3>Moroco</h3>
+                              <span>5 Tours</span>
+                              </div>
+                              </a>
+                              </div>
+                        <p class="name">{{item.name}}</p>
+                        <span class="position">{{item.carrier}}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="testimony-wrap p-4 ">
+                      <div class="text text-center">
+                          <div class="project-destination">
+                              <a href="#" class="img" style="background-image: url({% static 'img/9.jpeg' %});">
+                              <div class="text">
+                              <h3>Ghana</h3>
+                              <span>5 Tours</span>
+                              </div>
+                              </a>
+                              </div>
+                        <p class="name">{{item.name}}</p>
+                        <span class="position">{{item.carrier}}</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      
+      
+<section class="ftco-section " id="sec3">
+    <div class="container">
+    <div class="row justify-content-center pb-4">
+    <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+    <!--<span class="subheading">Destination</span>-->
+    <h2 class="mb-4">Tour Destinations</h2>
+    </div>
+    </div>
+    <div class="row">
+        {% for data in parks %}
+            <div class="col-md-4 ftco-animate fadeInUp ftco-animated">
+                <div class="project-wrap">
+                    <a href="{% url 'details' data.id %}" class="img details" data-url="#"
+                    style="background-image: url({{ data.image.url }});">
+                        
+                        {% if data.starting_prices %}
+                        <span class="price"> 
+                        Starting at ${{ data.starting_prices }}/person
+                        </span>
+                        {% else %}
+                        <span style="color: green;" class="price">-------------</span>
+                        {% endif %}
+                    </a>
+                <div class="text p-4">
+                    <!--<span class="days">8 Days Tour</span>-->
+                    <h3><a href="{% url 'details' data.id %}">{{ data.name }}</a></h3>
+                    <p class="location"><span class="fa fa-map-marker">     </span>   {{ data.location }}</p>
+                </div>
+                </div>
+            </div>
+        {% endfor  %}
+        </div>
+    </div>
+ 
+</section>
+
+    <section class="ftco-section ftco-about img" style="background-image: url({% static 'img/bg_4.jpg' %});">
+    <div class="overlay"></div>
+    <div class="container py-md-5">
+    <div class="row py-md-5">
+    <div class="col-md d-flex align-items-center justify-content-center">
+    <!--<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">-->
+    <!--<span class="fa fa-play"></span>-->
+    <!--</a>-->
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="sec4" class="ftco-section ftco-about ftco-no-pt img">
+    <div class="container">
+    <div class="row d-flex">
+    <div class="col-md-12 about-intro">
+    <div class="row">
+    <div class="col-md-6 d-flex align-items-stretch">
+    <div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url({% static 'img/about-1.jpg' %});">
+    </div>
+    </div>
+    <div class="col-md-6 pl-md-5 py-5">
+    <div class="row justify-content-start pb-3">
+    <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+    <!--<span class="subheading">About Us</span>-->
+    <h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
+    <p>Far far away, behind the word mountains, far from the countries 
+    Vokalia and Consonantia, there live the blind texts. Separated they live
+     in Bookmarksgrove right at the coast of the Semantics, a large language
+     ocean.</p>
+    <!--<p><a href="#" class="btn btn-success" data-toggle="modal" data-target="#myModal">Book Your Destination</a></p>-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+        <br><br>
+     <div class="row">
+        <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated" id="qoute">
+          <!--<span class="subheading">Get Qoutation</span>-->
+          <h3>Get Qoutation</h3>
+          </div>
+         <div class="container">
+             <div class="col-md-12 mt-3">
+          <form method="POST" action="{% url 'home' %}" >
+            {% csrf_token %}
+             <div class="form-row">
+               <div class="form-group col-md-6">
+                 <label for="inputEmail4">First Name</label>
+                 <input type="text" class="form-control" name="first_name" placeholder="Enter your first name">
+               </div>
+               <div class="form-group col-md-6">
+                 <label for="inputPassword4">Last Name</label>
+                 <input type="text" class="form-control" name="last_name" placeholder="Enter your last name">
+               </div>
+             </div>
+
+              <div class="form-row">
+             <div class="form-group col-md-6">
+                 <label for="inputEmail4">Email</label>
+                 <input type="email" class="form-control" name="email" placeholder="example@mail.com">
+               </div>
+               <div class="form-group col-md-6">
+                 <label for="inputPassword4">Phone</label>
+                 <input type="text" class="form-control" name="phone" placeholder="Enter your phone number">
+               </div>
+             </div>
+
+             <div class="form-row">
+                 <div class="form-group col-md-6">
+                     <label for="inputEmail4">Location</label>
+                     <input type="text" class="form-control" name="location" placeholder="Your currrent location">
+                   </div>
+                   <div class="form-group col-md-6">
+                     <label for="inputPassword4">Destination</label>
+                     <select name="destination" id="cars" class="form-control" >
+                         <option value="Select Destination">Select Destination</option>
+                         <option value="Ngorongoro">Ngorongoro</option>
+                         <option value="Manyara">Manyara</option>
+                         <option value="Mikumi">Mikumi</option>
+                         <option value="Selou">Selou</option>
+                     </select>
+                   </div>
+             </div>
+            <div class="form-group mt-2 text-center">
+                <p>
+                    Below are some of the services we provide to ensure you have a great experience in your trip; please check which ones you would like to be provided so they can be added to your qoutation.
+                </p>
+            </div>
+             <div class="form-row">
+                 <div class="form-group col-md-6">
+                     <div class="form-check">
+                         <input name="flight" class="form-check-input" type="checkbox" id="gridCheck">
+                         <label class="form-check-label" for="gridCheck">
+                         Flight
+                         </label>
+                       </div>
+                   </div>
+                   <div class="form-group col-md-6">
+                     <div class="form-check">
+                         <input name="accomodation" class="form-check-input" type="checkbox" id="gridCheck">
+                         <label class="form-check-label" for="gridCheck">
+                           Accomodation
+                         </label>
+                       </div>
+                   </div>
+                 </div>
+
+                 <div class="form-row">
+                     <div class="form-group col-md-6">
+                         <div class="form-check">
+                             <input name="pick_up" class="form-check-input" type="checkbox" id="gridCheck">
+                             <label class="form-check-label" for="gridCheck">
+                               Pick Up
+                             </label>
+                           </div>
+                       </div>
+                       <div class="form-group col-md-6">
+                         <div class="form-check">
+                             <input name="tour_cars" class="form-check-input" type="checkbox" id="gridCheck">
+                             <label class="form-check-label" for="gridCheck">
+                                Tour Cars
+                             </label>
+                           </div>
+                       </div>
+                     </div>
+
+             <button style="margin-left: 35%; width: 25%;"  type="submit" class="btn btn-success">Submit</button>
+           </form>
+         </div>
+         </div>
+      </div>
+    </section>
+    
+    
+    <section id="sec5" class="ftco-section testimony-section bg-bottom" style="background-image: url({% static 'img/9.jpeg' %});">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row justify-content-center pb-4">
+    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+    <!--<span class="subheading">Testimonial</span>-->
+    <h2 class="mb-4">Testimonials</h2>
+    </div>
+    </div>
+    <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel">
+
+            <div class="testimony-wrap py-4">
+                <div class="text">
+                <p class="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center">
+                <div class="user-img" style="background-image: url({% static 'img/2.jpeg' %})"></div>
+                <div class="pl-3">
+                <p class="name">Roger Scott</p>
+                <span class="position">Marketing Manager</span>
+                </div>
+                </div>
+                </div>
+                </div>
+         
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    
+    
+    <!--<section class="ftco-section"  >-->
+    <!-- <div class="container">-->
+    <!--<div class="row justify-content-center pb-4">-->
+    <!--<div class="col-md-12 heading-section text-center ftco-animate">-->
+    <!--<span class="subheading">Our Blog</span>-->
+    <!--<h2 class="mb-4">Recent Post</h2>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row d-flex">-->
+    <!--<div class="col-md-4 d-flex ftco-animate">-->
+    <!--<div class="blog-entry justify-content-end">-->
+    <!--<a href="https://preview.colorlib.com/theme/pacific/blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">-->
+    <!--</a>-->
+    <!--<div class="text">-->
+    <!--<div class="d-flex align-items-center mb-4 topp">-->
+    <!--<div class="one">-->
+    <!--<span class="day">11</span>-->
+    <!--</div>-->
+    <!--<div class="two">-->
+    <!--<span class="yr">2020</span>-->
+    <!--<span class="mos">September</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>-->
+    
+    <!--<p><a href="#" class="btn btn-primary">Read more</a></p>-->
+    <!--</div>-->
+    <!-- </div>-->
+    <!--</div>-->
+    <!--<div class="col-md-4 d-flex ftco-animate">-->
+    <!--<div class="blog-entry justify-content-end">-->
+    <!--<a href="https://preview.colorlib.com/theme/pacific/blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">-->
+    <!--</a>-->
+    <!--<div class="text">-->
+    <!--<div class="d-flex align-items-center mb-4 topp">-->
+    <!--<div class="one">-->
+    <!--<span class="day">11</span>-->
+    <!--</div>-->
+    <!--<div class="two">-->
+    <!--<span class="yr">2020</span>-->
+    <!--<span class="mos">September</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>-->
+    
+    <!--<p><a href="#" class="btn btn-primary">Read more</a></p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-4 d-flex ftco-animate">-->
+    <!--<div class="blog-entry">-->
+    <!--<a href="https://preview.colorlib.com/theme/pacific/blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">-->
+    <!--</a>-->
+    <!--<div class="text">-->
+    <!--<div class="d-flex align-items-center mb-4 topp">-->
+    <!--<div class="one">-->
+    <!--<span class="day">11</span>-->
+    <!--</div>-->
+    <!--<div class="two">-->
+    <!--<span class="yr">2020</span>-->
+    <!--<span class="mos">September</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>-->
+    
+    <!--<p><a href="#" class="btn btn-primary">Read more</a></p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div> -->
+    <!--</section>-->
+    
+    
+    <!--<section id="sec6" class="ftco-intro ftco-section ftco-no-pt">-->
+    <!--<div class="container">-->
+    <!--<div class="row justify-content-center">-->
+    <!--<div class="col-md-12 text-center">-->
+    <!--<div class="img" style="background-image: url({% static 'img/1.jpg' %});">-->
+    <!--<div class="overlay"></div>-->
+    <!--<h2>We Are Best African Travel Agency</h2>-->
+    <!--<p>We can manage your dream building A small river named Duden flows by their place</p>-->
+    <!--<p class="mb-0"><a href="#" class="btn btn-success px-4 py-3"-->
+    <!--    data-toggle="modal" data-target="#myModal"-->
+    <!--    >Get in Touch</a></p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
+    {% if messages%}
+    {% for message in messages %}
+            {% if message.tags == 'info'%}
+            <div style="width: 25%; margin-left: 40%; text-align: center;" class="alert alert-success alert-dismissible fade show" role="alert">
+             <strong>Successful! </strong> {{message}}
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+            {%endif%}
+            {% if message.tags == 'error'%}
+            <div style="width: 25%; margin-left: 40%; text-align: center;" class="alert alert-danger alert-dismissible fade show" role="alert">
+             <strong></strong>{{message}}
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+            {%endif%}
+    {% endfor%}
+ {% endif%}
+
+ <!-- Button to Open the Modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button> -->
+  
+  <!-- The Modal -->
+  <div class="modal fade " id="myModal">
+    <div class="modal-dialog  modal-lg ">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Get in Touch</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form method="POST" action="{% url 'home' %}" >
+               {% csrf_token %}
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="text" class="form-control" name="first_name" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Last Name</label>
+                    <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+                  </div>
+                </div>
+
+                 <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Phone</label>
+                    <input type="text" class="form-control" name="phone" placeholder="Phone">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Location</label>
+                        <input type="text" class="form-control" name="location" placeholder="Location">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Destination</label>
+                        <select name="destination" id="cars" class="form-control" >
+                            <option value="Select Destination">Select Destination</option>
+                            <option value="Ngorongoro">Ngorongoro</option>
+                            <option value="Manyara">Manyara</option>
+                            <option value="Mikumi">Mikumi</option>
+                            <option value="Selou">Selou</option>
+                        </select>
+                      </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="form-check">
+                            <input name="flight" class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                            Flight
+                            </label>
+                          </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="form-check">
+                            <input name="accomodation" class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Accomodation
+                            </label>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input name="pick_up" class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Pick Up
+                                </label>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input name="tour_cars" class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                   Tour Cars
+                                </label>
+                              </div>
+                          </div>
+                        </div>
+
+                <!-- <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div> -->
+                <button style="margin-left: 35%; width: 25%;"  type="submit" class="btn btn-success">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+<!-- To place above the incident-modal html -->
+<script>
+    $(document).on("click", ".details", function (e) {
+      e.preventDefault();
+      var $popup = $("#popup");
+      var popup_url = $(this).data("popup-url");
+      $(".modal-body", $popup).load(popup_url, function () {
+        $popup.modal("show");
+      });
+    });
+  </script>
+    
+{% endblock contents %}

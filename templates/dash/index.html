@@ -1,0 +1,61 @@
+
+{% extends 'dash/dash_base.html' %}
+{% load static %}
+    {% block contents %}
+    <section id="container">
+ 
+      <!-- **********************************************************************************************************************************************************
+          MAIN CONTENT
+          *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+        <section class="wrapper">
+          <div class="row">
+            <div class="col-lg-9 main-chart">
+             
+              <div class="row">
+                <!-- DIRECT MESSAGE PANEL -->
+                <div class="col-md-8 mb">
+                  <div class="message-p pn">
+                    <div class="message-header">
+                      <h5>Gome safaris Tourist Journey</h5>
+                    </div>
+                   <div class="container">
+                    <div class="row">
+                      <div class="col-md-9 ">
+                        <p class="small">Journey Tracking Form</p>
+                        <p class="message">Check the Box for the Place You have been Lately</p>
+
+                        <form class="form-group " role="form" method="POST" >
+                          {% csrf_token %}
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                            
+                                {{form.as_p}}
+                              </div>
+                              
+                            </div>  
+                              </div>
+                            </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                  <!-- /Message Panel-->
+                </div>
+                <!-- /col-md-8  -->
+              </div>
+      
+            </div>
+            <!-- /col-lg-9 END SECTION MIDDLE -->
+            <!-- **********************************************************************************************************************************************************
+
+          </div>
+          <!-- /row -->
+        </section>
+      </section>
+      <!--main content end-->
+    {% endblock contents %}
